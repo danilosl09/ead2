@@ -1,0 +1,18 @@
+{
+  "name": "atividadeead2",
+  "version": "1.0.0",
+  "description": "Atividade EAD disciplina Desenvolvimento Web II",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "nodemon": "nodemon"
+  },
+  "author": "Danilo Leal",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mysql2": "^3.2.4",
+    "sequelize": "^6.31.0"
+  }
+}
