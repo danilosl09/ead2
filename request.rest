@@ -1,0 +1,34 @@
+
+GET http://localhost:3000/get
+###
+
+GET http://localhost:3000/get/7
+###
+
+GET http://localhost:3000/cidade/:cidade
+###
+
+POST  http://localhost:3000/create
+Content-Type: application/json
+    {
+        "nome": "nome",
+        "email": "email",
+        "cidade": "cidade",
+        "estado": "estado",
+        "cep": "cep"        
+    }
+###
+
+PUT  http://localhost:3000/edit/:id
+Content-Type: application/json
+    {
+        "nome": "nome",
+        "email": "email",
+        "cidade": "cidade",
+        "estado": "estado",
+        "cep": "cep"        
+    }
+###
+
+DELETE  http://localhost:3000/delete/:id
+###

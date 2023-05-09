@@ -20,11 +20,15 @@ controller.getById = async (req, res) => {
     }
 };
 
-controller.get = async (req, res) => {
-    let idCidade = req.body.nome;
+controller.getByIdCidade = async (req, res) => {
+    let cidades = req.params.cidade
     try{
-        let clients = await client.findByPk(idCidade.nome)
-        res.status(200).json(clients)
+        let cidade = await client.findAll({
+            where:{
+                cidade: cidades
+            }
+        })
+        res.status(200).json(cidade)
     }catch(error){
         res.status(500).json(error)
     }
